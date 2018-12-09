@@ -3,6 +3,7 @@ Given /I am on the contact page/i do
 end
 
 When /I fill out the contact us form/i do
+  expect(@contact_us.first_name.text).to eq("")
   @contact_us.first_name.send_keys("Rich")
   @contact_us.last_name.send_keys("Downie")
   @contact_us.company.send_keys("Intellum")
