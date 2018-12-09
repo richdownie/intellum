@@ -5,7 +5,7 @@ class Homepage
   end
 
   def learn_more_for_tech
-    Selenium::WebDriver::Wait.new(timeout: 5).until {@browser.first(class: 'tech-button')}
-    @browser.first(class: 'tech-button')
+    Selenium::WebDriver::Wait.new(timeout: 5).until {@browser.first(class: 'bigbutton')}
+    @browser.first(class: 'bigbutton')
   end
 end

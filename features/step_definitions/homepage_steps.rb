@@ -1,4 +1,4 @@
-Given /I am on the hompage/i do
+Given /I am on the homepage/i do
   @browser.get(@domain)
 end
 
